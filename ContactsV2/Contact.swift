@@ -14,4 +14,8 @@ struct Contact: Hashable, Equatable {
     let phone: Int
     let photo: UIImage
     let email: String
+    
+    var fullName: String {
+        return first + " " + last
+    }
 }
